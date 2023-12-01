@@ -2,7 +2,7 @@
 
 #### What is this?
 This is a *work-in-progress* collection of Data Structures and algorithms used in computational Geometry.
-Most of the algorithms and Data Structures are based on the cs 164 lectures, tought by Dr. Eppstein, professor the ICS department at UC Irvine.
+Most of the algorithms and Data Structures are based on the cs 164 lectures, tought by Dr. Eppstein, professor in the ICS department at UC Irvine.
 
 #### What is the use for all of this?
 None really. Is mostly to see how all the concepts learned in the class can be applied and wrote in a programming language.
