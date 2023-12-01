@@ -14,10 +14,9 @@ import matplotlib.animation as animation
 from functools import cmp_to_key
 from Point import Point
 from matplotlib.animation import FuncAnimation
+from variables import UPPERBOUND, LOWERBOUND
 
 
-LOWERBOUND = 0
-UPPERBOUND = 3000
 
 def min_i(coords: list[Point]) -> Point:  # O(n)
     if coords == []:
@@ -45,6 +44,12 @@ class ConvHull2:  # O(n log n)
         self.stack = []
         self.final_stack_states= []
         self.stack_states = []   # check the state of the stack. Used for representation in animation_graph
+
+    def retrive_points(self):
+        return self.coord
+    def hull(self):
+        self.graham()
+        return self.stack
 
     def graham(self):
         anchor = min_i(self.coord)
